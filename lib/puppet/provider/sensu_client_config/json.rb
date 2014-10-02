@@ -49,7 +49,7 @@ Puppet::Type.type(:sensu_client_config).provide(:json) do
   end
 
   def check_args
-    ['name', 'address', 'subscriptions', 'safe_mode', 'bind', 'keepalive']
+    ['name', 'address', 'subscriptions', 'safe_mode', 'bind']
   end
 
   def client_name
